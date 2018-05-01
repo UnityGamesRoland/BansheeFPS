@@ -4,11 +4,9 @@ namespace BansheeEngine
 	{
         public Camera characterCamera;
         public float mouseSensitivity = 1.5f;
-        
+
         private float yaw;
         private float pitch;
-
-        private Vector2 currentRotation;
 		
 		private void OnUpdate()
 		{

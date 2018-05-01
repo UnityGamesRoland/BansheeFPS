@@ -21,7 +21,7 @@ namespace BansheeEngine
 
         private void OnUpdate()
         {
-            //Get the input direction and normalize it.
+            //Get the input direction and normalize it. For some reason the input is inverted, so we take the negative of the axis to get the correct values.
             Vector2 inputDir = new Vector2(-MovementUtilities.GetHorizontalInput(), -MovementUtilities.GetVerticalInput());
             inputDir.Normalize();
 
